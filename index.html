@@ -24,19 +24,23 @@
           <h4>Michelle Appleton</h4>
           <p class="date">28 Jun 2020</p> 
         </div>
-        <img src="./images/icon-share.svg" alt="share-icon" class="share-icon">
-
-        <!-- <div class="share">
-          <span>Share</span>
-          <div class="social-icons">
-            <img src="./images/icon-facebook.svg" alt="Facebook">
-            <img src="./images/icon-twitter.svg" alt="Twitter">
-            <img src="./images/icon-pinterest.svg" alt="Pinterest">
-          </div> -->
-        </div>
+        <div class="share-container">
+          <img src="./images/icon-share.svg" alt="share-icon" class="share-icon" onclick="toggleSharePopup()">
+          <div class="share-popup" id="sharePopup">
+            <div class="share">
+              <span>SHARE</span>
+              <div class="social-icons">
+                <img src="./images/icon-facebook.svg" alt="Facebook">
+                <img src="./images/icon-twitter.svg" alt="Twitter">
+                <img src="./images/icon-pinterest.svg" alt="Pinterest">
+              </div>
+            </div>
+          </div>
+        </div> 
       </div>
     </div>
   </div>
   
+  <script src="script.js"></script>
 </body>
 </html>

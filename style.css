@@ -85,18 +85,36 @@ body{
 }
 
 .share-icon{
-    margin-left: auto;
-    padding-left: 0;
-    background-color: var(--light-grayish-blue);
-    border-radius: 50%;
-    padding: 0.5em; /* space inside the circle */
+  margin-left: auto;
+  padding-left: 0;
+  background-color: var(--light-grayish-blue);
+  border-radius: 50%;
+  padding: 0.5em; /* space inside the circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer; 
+}
+
+.share{
+    background-color: var(--very-dark-blue);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    cursor: pointer; 
-}
+    padding: 0.7em;
+    color: #ffffff;
+    border-radius: 0.7em;
+    gap: 0.5em;
+  }
+
+ 
+
+  .share-container {
+  position: relative;
+  display: inline-block;
+ }
 
 @media screen and (min-width: 900px) {
   body {
@@ -139,4 +157,58 @@ body{
     height: 2.5rem;
     cursor: pointer;
   }
+
+  .share-icon{
+    margin-left: 90px;
+  }
+
+  .share-icon:hover {
+    background-color: var(--grayish-blue); /* or slightly darker */
+    transition: background-color 0.3s ease;
+  }
+  
+  .share-icon:active {
+    background-color: var(--desaturated-dark-blue); /* or slightly darker */
+  }
+
+  .share{
+    background-color: var(--very-dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7em;
+    color: #ffffff;
+    border-radius: 0.7em;
+    gap: 0.5em;
+  }
+
+  .social-icons{
+    display: flex;
+    gap: 1em;
+    cursor: pointer;
+    padding: 0.3em;
+    /* position: absolute; */
+  }
+
+  .share-container {
+  position: relative;
+  display: inline-block;
+ }
+
+  .share-popup {
+    position: absolute;
+    bottom: 120%;
+    right: 50;
+    background-color: var(--very-dark-blue);
+    /* padding: 0.7em 1em; */
+    border-radius: 0.7em;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    color: #fff;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
 }
